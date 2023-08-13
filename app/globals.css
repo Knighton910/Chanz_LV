@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  -webkit-touch-callout:none;                /* prevent callout to copy image, etc when tap to hold */
+  -webkit-text-size-adjust:none;             /* prevent webkit from resizing text to fit */
+  -webkit-tap-highlight-color:rgba(0,0,0,0); /* prevent tap highlight color / shadow */
+  -webkit-user-select:none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -24,4 +31,139 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.nav-button:hover {
+  color: red
+}
+a {
+  color: #FFF;
+}
+a:hover {
+  color: #00F;
+}
+
+.inner {
+  max-width: '50vh';
+  margin: auto;
+  padding: 0;
+}
+
+/* audio info */
+.audio-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.text {
+  color: slategray;
+  font-size: 2rem;
+  font-weight: 100;
+  font-size: 32px;
+}
+
+.title {
+  color: #1e1e1e;
+  font-weight: 500;
+  font-size: 2rem;
+  background-color: #fff;
+}
+
+/* audio image */
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.audio-image {
+  width: 300px;
+  height: 300px;
+  background: #1e1e1e;
+  border-radius: 1.3rem;
+}
+
+.audio-icon {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background: #989898;
+}
+
+.audio-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  border-radius: 1.3rem;
+}
+
+/* Your existing CSS styles for .controls-wrapper and .controls */
+
+/* New styles for the volume controls */
+.volume-controls {
+  display: flex;
+  align-items: center; /* Optional: Center the volume controls horizontally */
+  margin-top: 1rem; /* Add spacing between the controls and the volume controls */
+  padding: 1em;
+}
+
+.volume-controls input[type="range"] {
+  width: 100%; /* Make the volume slider take the full width */
+}
+
+
+/* controls */
+.controls-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  flex-direction: column;
+}
+
+.controls button, .volume button {
+  border: none;
+  margin-right: 8px;
+  margin-bottom: 7px;
+  cursor: pointer;
+}
+
+button svg {
+  font-size: 20px;
+}
+
+.volume {
+  display: flex;
+  align-items: center;
+}
+
+.volume button {
+  margin: 0;
+}
+
+.progress {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 80%;
+  margin-left: auto;
+}
+
+/* time */
+.time {
+  color: #333;
+  font-size: 13px;
+  line-height: 46px;
+}
+
+.time.current {
+  color: #f50;
 }
