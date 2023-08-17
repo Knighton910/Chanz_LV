@@ -14,6 +14,7 @@ import dbanj from "./dbanj.png";
 import jackson from "./jackson.jpeg";
 import trinix from "./trinix.jpeg";
 import chanz from "./chanz.jpg";
+import fashion from "../../public/fashion.png";
 import knocking from "./knocking.png";
 
 export const tracks = [
@@ -21,10 +22,10 @@ export const tracks = [
     title: "Playing with it",
     src: playing,
     author: "Chanz P",
-    thumbnail: chanz,
+    thumbnail: fashion,
   },
   {
-    title: "Knocking door down",
+    title: "Knockin' Doorz Down",
     src: pimp,
     author: "Pimp C",
     thumbnail: knocking,
@@ -36,7 +37,7 @@ export const tracks = [
     thumbnail: trinix,
   },
   {
-    title: "We Are The World",
+    title: "We love planet earth monkeys and lions",
     src: world,
     author: "Michael Jackson",
     thumbnail: jackson,

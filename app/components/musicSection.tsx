@@ -29,9 +29,9 @@ const MusicSection = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center py-12 bg-white">
+    <div className="flex flex-col justify-center items-center py-12 bg-blue-800">
       <div className="text-center">
-        <h1 className="text-5xl sm:text-8xl text-black font-bold tracking-tight mb-10">
+        <h1 className="text-5xl sm:text-7xl text-white font-bold tracking-tight mb-10">
           My latest hits
         </h1>
       </div>

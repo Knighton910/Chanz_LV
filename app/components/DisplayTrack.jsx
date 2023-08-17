@@ -23,7 +23,7 @@ const DisplayTrack = ({
         onEnded={handleNext}
       />
       <div className="audio-info">
-        <div className="audio-image">
+        <div className="audio-image shadow-lg">
           {currentTrack.thumbnail ? (
             <Image src={currentTrack.thumbnail} alt="audio avatar" />
           ) : (
@@ -34,9 +34,13 @@ const DisplayTrack = ({
             </div>
           )}
         </div>
-        <div className="text">
-          <p className="title">{currentTrack.title}</p>
-          <p>{currentTrack.author}</p>
+        <div>
+          <p className="font-sans font-bold mb-4 text-3xl text-indigo-200 center">
+            {currentTrack.author}
+          </p>
+          <p className="text-4xl font-sans text-indigo-50 mb-3 center">
+            {currentTrack.title}
+          </p>
         </div>
       </div>
     </div>

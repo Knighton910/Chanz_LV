@@ -6,10 +6,10 @@ import chanzPP from "../../public/chanzLogo.png";
 
 export default function Page() {
   return (
-    <div>
+    <div className="bg-white">
       <Navbar />
 
-      <div className="flex flex-col items-center justify-center py-24">
+      <div className="flex flex-col items-center justify-center py-24 text-black">
         <Image alt="logo" src={chanzPP} style={{ width: "40%", marginTop: "4rem", marginBottom: "3rem" }} />
         <h1 className="text-center pb-3 font-bold">Local Tour Dates</h1>
 

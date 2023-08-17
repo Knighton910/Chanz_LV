@@ -2,15 +2,15 @@ import { useState, useEffect, useRef, useCallback } from "react";
 
 // icons
 import {
-  IoPlayBackSharp,
-  IoPlayForwardSharp,
-  IoPlaySkipBackSharp,
-  IoPlaySkipForwardSharp,
-  IoPlaySharp,
-  IoPauseSharp,
+  IoPlayBackOutline,
+  IoPlayForwardOutline,
+  IoPlaySkipBackOutline,
+  IoPlaySkipForwardOutline,
+  IoPlayCircleOutline,
+  IoPauseCircleOutline,
 } from "react-icons/io5";
 
-import { IoMdVolumeHigh, IoMdVolumeOff, IoMdVolumeLow } from "react-icons/io";
+import { LuVolume1, LuVolume2, LuVolumeX } from "react-icons/lu";
 
 const Controls = ({
   audioRef,
@@ -84,30 +84,34 @@ const Controls = ({
     <div className="controls-wrapper">
       <div className="controls">
         <button onClick={handlePrevious}>
-          <IoPlaySkipBackSharp />
+          <IoPlaySkipBackOutline size="35" color="white" />
         </button>
         <button onClick={skipBackward}>
-          <IoPlayBackSharp />
+          <IoPlayBackOutline size="35" color="white" />
         </button>
 
         <button onClick={togglePlayPause}>
-          {isPlaying ? <IoPauseSharp /> : <IoPlaySharp />}
+          {isPlaying ? (
+            <IoPauseCircleOutline size="75" color="white" />
+          ) : (
+            <IoPlayCircleOutline size="75" color="white" />
+          )}
         </button>
         <button onClick={skipForward}>
-          <IoPlayForwardSharp />
+          <IoPlayForwardOutline size="35" color="white" />
         </button>
         <button onClick={handleNext}>
-          <IoPlaySkipForwardSharp />
+          <IoPlaySkipForwardOutline size="35" color="white" />
         </button>
       </div>
       <div className="volume">
         <button onClick={() => setMuteVolume((prev) => !prev)}>
           {muteVolume || volume < 5 ? (
-            <IoMdVolumeOff />
+            <LuVolumeX size="35" color="white" className="mr-2" />
           ) : volume < 40 ? (
-            <IoMdVolumeLow />
+            <LuVolume1 size="35" color="white" className="mr-2" />
           ) : (
-            <IoMdVolumeHigh />
+            <LuVolume2 size="35" color="white" className="mr-2" />
           )}
         </button>
         <input

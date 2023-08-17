@@ -12,14 +12,14 @@ export default function Page() {
       <Navbar />
 
       <div className="flex flex-col items-center justify-center py-24 bg-[#ecf0f3]">
-        <h1 className="mt-10 text-3xl">About Me</h1>
+        <h1 className="mt-10 text-4xl text-black">About Me</h1>
         <Image
           src={chanzP}
           alt="chanz image"
           style={{ width: "50%", marginBottom: "2em", marginTop: "2em" }}
         />
 
-        <p className='text-center text-lg px-6'>
+        <p className='text-center text-black text-lg px-6'>
           Born to Rita Brooks whom was a well respected School Teacher
           I had little margin for error, but not for one second think that
           I was not a cool kid, i totally was (Toot my own horn) and somehow
@@ -39,7 +39,7 @@ export default function Page() {
           style={{width: "70%", marginTop: "4rem", marginBottom: "4rem"}}
         />
 
-        <p className='text-center text-lg mt-5 px-6'>
+        <p className='text-center text-black text-lg mt-5 px-6'>
           Lorem Ipsum has been the standard dummy text ever since the
           1500s, when an unknown printer took a galley of type and scrambled it
           to make a type specimen book. It has survived not only five centuries,

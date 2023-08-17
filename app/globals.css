@@ -57,20 +57,6 @@ a:hover {
   gap: 20px;
 }
 
-.text {
-  color: slategray;
-  font-size: 2rem;
-  font-weight: 100;
-  font-size: 32px;
-}
-
-.title {
-  color: #1e1e1e;
-  font-weight: 500;
-  font-size: 2rem;
-  background-color: #fff;
-}
-
 /* audio image */
 .icon-wrapper {
   display: flex;
@@ -159,11 +145,11 @@ button svg {
 
 /* time */
 .time {
-  color: #333;
+  color: tomato;
   font-size: 13px;
   line-height: 46px;
 }
 
 .time.current {
-  color: #f50;
+  color: #ffffff;
 }
