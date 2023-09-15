@@ -7,6 +7,10 @@ import forest from "./forest-lullaby-110624.mp3";
 import podcast from "./the-podcast-intro-111863.mp3";
 import pimp from "./pimp.mp4";
 import playing from "./PLAYIN.mp3";
+// ** new Audio imports
+import gg from "./GGI.mp3";
+import bitt from "./bitter.mp3";
+import grind from "./grind.mp3";
 
 // audio thumbnails
 import lexin from "./lexin.jpeg";
@@ -16,13 +20,35 @@ import trinix from "./trinix.jpeg";
 import chanz from "./chanz.jpg";
 import fashion from "../../public/fashion.png";
 import knocking from "./knocking.png";
+// ** new Photo imports
+import famm from "../../public/23.png"
+import gees from "../../public/25.png"
+import myBliss from "../../public/22.png"
 
 export const tracks = [
   {
-    title: "Playing with it",
+    title: "Playing With It",
     src: playing,
     author: "Chanz P",
     thumbnail: fashion,
+  },
+  {
+    title: "Tryna Get A Million",
+    src: gg,
+    author: "Chanz P",
+    thumbnail: famm,
+  },
+  {
+    title: "On My grind",
+    src: grind,
+    author: "Chanz P",
+    thumbnail: gees,
+  },
+  {
+    title: "Bitter Sweet",
+    src: bitt,
+    author: "Chanz P",
+    thumbnail: myBliss,
   },
   {
     title: "Knockin' Doorz Down",
@@ -30,38 +56,5 @@ export const tracks = [
     author: "Pimp C",
     thumbnail: knocking,
   },
-  {
-    title: "Its a beautiful day",
-    src: beautiful,
-    author: "Trinix ft Rushawn",
-    thumbnail: trinix,
-  },
-  {
-    title: "We love planet earth monkeys and lions",
-    src: world,
-    author: "Michael Jackson",
-    thumbnail: jackson,
-  },
-  {
-    title: "Top Of The World",
-    src: top,
-    author: "Dbanj",
-    thumbnail: dbanj,
-  },
-  {
-    title: "Cinematic Time Lapse",
-    src: cinematic,
-    author: "Lexin Music",
-    thumbnail: lexin,
-  },
-  {
-    title: "Forest Lullaby",
-    src: forest,
-    author: "Lesfm",
-  },
-  {
-    title: "The Podcast Intro",
-    src: podcast,
-    author: "Music Unlimited",
-  },
+  
 ];
